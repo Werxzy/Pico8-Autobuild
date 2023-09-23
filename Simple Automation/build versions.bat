@@ -10,7 +10,7 @@ set color=22222200
 
 @REM fix content of web version
 python process_web_version.py %name% %margin% %color%
-@REM python process_web_version.py 1k_car 0 22222200
+@REM python process_web_version.py 1k_car 16 22222200
 
 @REM zip web files for itch.io page
 "C:\Program Files (x86)\WinRAR\WinRAR.exe" a -afzip "%name%_html.zip" %name%_html\index.html %name%_html\%name%.js

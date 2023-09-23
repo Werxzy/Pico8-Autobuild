@@ -9,7 +9,7 @@ with open(filename) as f:
 
 # Adjust upper margin to fit image.
 margin = sys.argv[2]
-# margin = 0
+# margin = 16
 
 s = s.replace(
     'var margin_top = 0;', 
