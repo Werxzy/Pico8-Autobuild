@@ -20,7 +20,7 @@ python process_web_version.py %name% %margin% %color%
 %pico8% ..\%name%.p8 -export "%name%.p8.png"
 @REM "C:\Program Files (x86)\PICO-8\pico8.exe" ..\1k_car.p8 -export "1k_car.p8.png"
 
-@REM export binary versions and the cart
+@REM export binary versions
 %pico8% ..\%name%.p8 -export "%name%.bin"
 @REM "C:\Program Files (x86)\PICO-8\pico8.exe" ..\1k_car.p8 -export "1k_car.bin"
 
