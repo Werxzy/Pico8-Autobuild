@@ -1,7 +1,7 @@
 @REM replace name of game and file locations where necessary
 set name=1k_car
 set pico8="C:\Program Files (x86)\PICO-8\pico8.exe"
-set margin=0
+set margin=16
 set color=22222200
 
 @REM export to html
