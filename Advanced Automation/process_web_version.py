@@ -20,8 +20,8 @@ def find_replace(s:"str", after, start, replace, end):
 
 # example
 # a = '... .p8_start_button{ background:url("blah blah 09872345") ... }'
-# a = find_repalce(a, '.p8_start_button{', 'background:url("', 'embed.png', '")')
-# assert(a == '.p8_start_button{ background:url("embed.png") }')
+# a = find_replace(a, '.p8_start_button{', 'background:url("', 'embed.png', '")')
+# assert(a == '... .p8_start_button{ background:url("embed.png") ... }')
 
 
 def margin_top(s:"str", y):

@@ -9,12 +9,12 @@ with open(filename) as f:
 
 # Make original border transparent or replace with different color.
 s = s.replace(
-    '222', 
-    sys.argv[2]
-    # '22222200'
+    '#222', 
+    f'#{sys.argv[2]}'
+    # '#00000000'
 )
 
-if len(sys.argv) >= 3:
+if len(sys.argv) > 3:
     # Adjust upper margin to fit image.
     margin = sys.argv[3]
     # margin = 16
