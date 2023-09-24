@@ -11,6 +11,9 @@ set pico8="C:\Program Files (x86)\PICO-8\pico8.exe"
 @REM fix formatting and colors
 python process_web_version.py %name%
 
+@REM copy images for the web files
+xcopy /y images\ %name%_html\
+
 @REM zip it
 "C:\Program Files (x86)\WinRAR\WinRAR.exe" a -afzip "%name%_html.zip" %name%_html
 

@@ -7,7 +7,7 @@ with open(filename) as f:
 # replaces a range of text with some searching
 # great for replacing ambiguous text
 # the searched text (after, start, end) should either be unique or the first instance after the previous(or start).
-def find_replace(s:"str", after, start, replace, end):
+def find_replace(s:"str", after:"str", start:"str", replace:"str", end:"str"):
     # find the first instance of "after"
     first = s.find(after) + len(after)
     
@@ -41,14 +41,15 @@ def margin_top(s:"str", y):
     # )
     return s
 
-s = margin_top(s, 24)
+s = margin_top(s, 16)
 
 
 
 # adds extra info to the body for the background image
+# background-size should usually match embed.png size
 s = find_replace(s, '<body',
     'margin:0px;',
-    'background-image: url(\'embed.png\'); background-size: 960px 960px; image-rendering: pixelated; background-repeat: no-repeat; background-position: top;',
+    'background-image: url(\'embed.png\'); background-size: 640 640; image-rendering: pixelated; background-repeat: no-repeat; background-position: top;',
     '">'            
 )
 # s = s.replace(
